@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import Navbar from './components/Navbar'
-import { Link, Navigate, Route, Routes } from 'react-router-dom'
+import { Navigate, Route, Routes } from 'react-router-dom'
 import Dashboard from './pages/Dashboard'
 import SignUpPage from './pages/SignUpPage'
 import LoginPage from './pages/LoginPage'
@@ -31,10 +31,6 @@ const App = () => {
   return (
     <div >
       <Navbar/>
-      <div className='mt-20 ml-7 text-lg'>
-          <Link to="/" className='hover:underline'>Home</Link>{" / "}
-          <Link to="/coursepage" className='hover:underline'>Courses</Link>
-        </div>
       <Routes>
         <Route path='/' element={authStudent ? <Dashboard/> : <Navigate to="/login"/>}/>
         <Route path='/welcome' element={authStudent ? <WelcomePage/> : <Navigate to="/"/>}/>

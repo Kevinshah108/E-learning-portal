@@ -27,6 +27,10 @@ function Dashboard() {
 
   return (
     <div className="p-6">
+        <div className='mt-14 mb-5 ml-2 text-lg'>
+          <Link to="/" className='hover:underline'>Home</Link>{" / "}
+          <Link to="/coursepage" className='hover:underline'>Courses</Link>
+        </div>
       <h1 className="text-2xl font-bold mb-4 ml-2">My Courses</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
         {courses.map(course => (
