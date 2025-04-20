@@ -15,7 +15,7 @@ const PORT = process.env.PORT
 app.use(express.json())
 app.use(cookieParser());
 app.use(cors({
-    origin: "http://deploy-mern-lwhq.vercel.app",
+    origin: "http://localhost:5173",
     methods: ["POST", "GET"],
     credentials: true
 }))
