@@ -61,7 +61,7 @@ e-learning-portal-backend/ ├── src/ ├── controllers/ ├── model
 
 ```bash
 # Clone project
-git clone https://github.com/yourusername/e-learning-portal.git
+git clone https://github.com/Kevinshah108/E-learning-portal.git
 
 ✨ Future Improvements
 Admin Dashboard (Manage Courses)
