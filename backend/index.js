@@ -15,12 +15,12 @@ const PORT = process.env.PORT
 
 app.use(cors({
     origin: "https://e-learning-portal-frontend.vercel.app",
-    methods: ["GET", "POST", "PUT"],
     credentials: true,
 }))
+
 app.use(express.json())
 app.use(cookieParser());
-app.options('*', cors());
+
 
 app.use("/api/auth", authRoutes)
 app.use("/api", courseRoutes)
