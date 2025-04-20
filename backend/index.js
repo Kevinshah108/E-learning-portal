@@ -26,9 +26,6 @@ app.use(cookieParser());
 app.use("/api/auth", authRoutes)
 app.use("/api", courseRoutes)
 
-app.get("/", (req, res) => {
-    res.send("Backend server is live! 🚀");
-  });
 
 app.listen(PORT, () => {
     console.log("Server is running on PORT:" + PORT);
