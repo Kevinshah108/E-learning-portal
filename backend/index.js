@@ -12,9 +12,10 @@ const app= express();
 
 const PORT = process.env.PORT 
 
+const allowedOrigins = ["https://e-learning-portal-frontend.vercel.app"];
 
 app.use(cors({
-    origin: "https://e-learning-portal-frontend.vercel.app",
+    origin: allowedOrigins,
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
 }))
