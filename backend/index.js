@@ -16,7 +16,7 @@ app.use(express.json())
 app.use(cookieParser());
 app.use(cors({
     origin: "https://e-learning-portal-frontend.vercel.app",
-    methods: ["POST", "GET", "PUT"],
+    methods: ["GET", "POST", "PUT"],
     credentials: true,
 }))
 
