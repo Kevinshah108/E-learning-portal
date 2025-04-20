@@ -1,6 +1,6 @@
 import axios from "axios";
 
 export const axiosInstance = axios.create({
-    baseURL: "https://e-learning-portal-backend.vercel.app/api",
+    baseURL: (`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api`),
     withCredentials: true,
 })

@@ -12,20 +12,15 @@ const app= express();
 
 const PORT = process.env.PORT 
 
-
-app.use(cors({
-    origin: "https://e-learning-portal-frontend.vercel.app",
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true,
-}))
-
 app.use(express.json())
 app.use(cookieParser());
-
+app.use(cors({
+    origin: "http://localhost:5173",
+    credentials: true
+}))
 
 app.use("/api/auth", authRoutes)
 app.use("/api", courseRoutes)
-
 
 app.listen(PORT, () => {
     console.log("Server is running on PORT:" + PORT);
