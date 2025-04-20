@@ -15,6 +15,7 @@ const PORT = process.env.PORT
 
 app.use(cors({
     origin: "https://e-learning-portal-frontend.vercel.app",
+    methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
 }))
 
