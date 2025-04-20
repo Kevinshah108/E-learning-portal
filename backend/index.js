@@ -27,7 +27,10 @@ app.use(cookieParser());
 app.use("/api/auth", authRoutes)
 app.use("/api", courseRoutes)
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 82be9d3a9247afec3fd879ac385e307769a7e5a1
 app.listen(PORT, () => {
     console.log("Server is running on PORT:" + PORT);
     connectDB();
